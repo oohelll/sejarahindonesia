@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tiro Kannada', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.jumbotron {
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5) url(https://s-i.huffpost.com/gen/1461233/images/o-INDONESIA-facebook.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+span {
+    animation: blink 1s linear infinite;
+    display: inline-block;
+    width:1px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.jumbotron h1::after {
+    content: "";
+    display: block;
+    width: 40%;
+    margin: 15px auto 0 auto;
+    border: 2px solid #A0AECD;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: #A0AECD;
+    font-weight: lighter;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container { 
+    margin: 8% 0;
+    padding: 0 160px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.early-history h1 {
+    font-size: 65px;
+}
+
+.early-history h1:nth-child(2) {
+    margin-top: -30px;
+}
+
+.early-history h1:nth-child(2)::after {
+    content: "";
+    display: block;
+    border: 2px solid #A0AECD;
+    width: 30%;
+    margin: 0px 0 10px 0;
+}
+
+.early-history p {
+    margin-top: 30px;
+}
+
+.era-colonial {
+    margin-top: 100px;
+}
+
+.era-colonial h1 {
+    text-align: end;
+    font-size: 65px;
+}
+
+.era-colonial h1::after {
+    content: "";
+    display: block;
+    border: 2px solid #A0AECD;
+    width: 30%;
+    margin: 0px 0 10px 420px;
+
+}
+
+.era-colonial p {
+    margin-top: 30px;
+}
+
+.images {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.era-colonial figure {
+    margin-bottom: 40px;
+}
+
+.era-colonial figure figcaption {
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+.post-war {
+    margin-top: 80px;
+}
+
+.post-war h1 {
+    font-size: 65px;
+    text-align: center;
+}
+
+.post-war h1:nth-child(2) {
+    margin-top: -30px;
+}
+
+.post-war h1:nth-child(2)::after {
+    content: "";
+    display: block;
+    border: 2px solid #A0AECD;
+    width: 30%;
+    margin: 0px auto 40px auto;
+}
+
+.post-war figure figcaption {
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0 40px 0;
+}
+
+.post-war p {
+    margin-top: 30px;
+}
+
+aside {
+    margin-left: 80px;
+    background-color: #A0AECD;
+    height: min-content;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+aside figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside figure h5 {
+    font-size: 12px;
+}
+
+aside figure h5::after {
+    display: block;
+    content: "";
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+table {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+table th {
+    font-size: 16px;
+}
+
+table td {
+    font-size: 12px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #A0AECD;
+    padding: 35px 0px;
+    text-align: center;
+}
+
+/* Bagian Responsive */
+/* Bagian Jumbotron */
+@media screen and (min-width: 2000px) {
+    .jumbotron {
+        height: 740px;
+    }
+
+    .jumbotron h1 {
+        font-size: 110px;
+        letter-spacing: 6px;
+    }
+
+    .jumbotron h1::after {
+        width: 60%;
+        border: 4px solid #A0AECD;
+    }
+
+    nav {
+        padding: 24px 0;
+    }
+
+    nav ul li {
+        font-size: 24px;
+        margin: 0 40px;
+    }
+
+   /* Bagian Content */
+    .container { 
+        padding: 0 160px;
+    }
+
+    .early-history h1, .post-war h1, .era-colonial h1 {
+        font-size: 75px;
+    }
+
+    .early-history h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+        margin: 0px 0 40px 0;
+    }
+
+    .early-history p, .post-war p, .era-colonial p {
+        font-size: 20px;
+    }
+
+    .era-colonial h1::after {
+        border: 3px solid #A0AECD;
+        margin: 0 0 10px auto;
+    }
+
+    .era-colonial figure figcaption, .post-war figure figcaption  {
+        font-size: 14px;
+    }
+
+    .post-war h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .logo {
+        width: 210px;
+    }
+
+    aside {
+        padding: 30px 50px;
+    }
+
+    table tr {
+        font-size: 20px;
+    }
+    
+    table td {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 2000px) {
+    .jumbotron {
+        height: 700px;
+    }
+
+    .jumbotron h1 {
+        font-size: 110px;
+        letter-spacing: 6px;
+    }
+
+    .jumbotron h1::after {
+        width: 60%;
+        border: 4px solid #A0AECD;
+    }
+
+    nav {
+        padding: 24px 0;
+    }
+
+    nav ul li {
+        font-size: 21px;
+    }
+
+    /* Bagian Content */
+    .container { 
+        padding: 0 160px;
+    }
+
+    .early-history h1, .post-war h1, .era-colonial h1 {
+        font-size: 75px;
+    }
+
+    .early-history h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+        margin: 0px 0 40px 0;
+    }
+
+    .early-history p, .post-war p, .era-colonial p {
+        font-size: 20px;
+    }
+
+    .era-colonial h1::after {
+        border: 3px solid #A0AECD;
+        margin: 0 0 10px auto;
+    }
+
+    .era-colonial figure figcaption, .post-war figure figcaption  {
+        font-size: 14px;
+    }
+
+    .post-war h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .logo {
+        width: 210px;
+    }
+
+    aside {
+        padding: 30px 50px;
+    }
+
+    table tr {
+        font-size: 20px;
+    }
+    
+    table td {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .jumbotron {
+        height: 660px;
+    }
+
+    .jumbotron h1 {
+        font-size: 110px;
+        letter-spacing: 6px;
+    }
+
+    .jumbotron h1::after {
+        width: 60%;
+        border: 4px solid #A0AECD;
+    }
+
+    nav {
+        padding: 24px 0;
+    }
+
+    nav ul li {
+        font-size: 21px;
+    }
+
+    /* Bagian Content */
+    .container { 
+        padding: 0 160px;
+    }
+
+    .early-history h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+    .era-colonial h1::after {
+        border: 3px solid #A0AECD;
+        margin: 0 0 10px auto;
+    }
+
+    .post-war h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    aside {
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .jumbotron {
+        height: 610px;
+    }
+
+    /* Bagian Content */
+    .container { 
+        padding: 0 160px;
+    }
+
+    .early-history h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+    .era-colonial h1::after {
+        border: 3px solid #A0AECD;
+        margin: 0 0 10px auto;
+    }
+
+    .post-war h1:nth-child(2)::after {
+        border: 3px solid #A0AECD;
+    }
+
+
+    .logo {
+        width: 170px;
+    }
+
+    aside {
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container { 
+        padding: 0 150px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 53px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 14px;
+    }
+
+    .era-colonial h1::after {
+        margin: 0px 0 10px auto;
+    }
+
+    .post-war figure figcaption {
+        font-size: 8px;
+    }
+
+    aside {
+        padding: 30px 40px;
+    }
+
+    aside figure h5 {
+        font-size: 10px;
+    }
+
+    table th {
+        font-size: 13px;
+    }
+    
+    table td {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .jumbotron {
+        height: 550px;
+    }
+
+    .jumbotron h1 {
+        font-size: 85px;
+    }
+
+    .jumbotron h1::after {
+        margin: auto;
+    }
+
+    .container { 
+        padding: 0 110px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .container { 
+        padding: 0 90px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 45px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container { 
+        padding: 0 60px;
+    }
+
+    aside {
+        margin-left: 30px;
+        padding: 20px 35px;
+    }
+
+    aside figure h5 {
+        font-size: 10px;
+    }
+
+    table th {
+        font-size: 13px;
+    }
+    
+    table td {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        height: 500px;
+    }
+
+    .jumbotron h1 {
+        font-size: 70px;
+    }
+
+    nav {
+        padding: 16px 0;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+
+    .container { 
+        padding: 0 40px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 35px;
+    }
+
+    .early-history h1:nth-child(2) {
+        margin-top: -15px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 10px;
+    }
+
+    .era-colonial figure figcaption {
+        font-size: 8px;
+    }
+
+    .post-war figure figcaption {
+        font-size: 6px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    
+    aside figure h5 {
+        font-size: 9px;
+    }
+
+    table th {
+        font-size: 12px;
+    }
+    
+
+    footer {
+        padding: 25px;
+    }
+    
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 32px;
+    }
+
+    aside {
+        padding: 15px 25px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .jumbotron {
+        height: 840px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 40px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 13px;
+    }
+
+    aside {
+        margin-left: 0px;
+        margin-top: 45px;
+    }
+
+    aside figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 65%;
+    }
+
+    aside figure h5 {
+        font-size: 15px;
+    }
+
+    table th {
+        font-size: 25px;
+    }
+    
+    table td {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .jumbotron h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 30px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 11px;
+    }
+
+    .post-war h1:nth-child(2) {
+        margin-top: -20px;
+    }
+
+    aside figure h5 {
+        font-size: 13px;
+    }
+
+    table th {
+        font-size: 19px;
+    }
+    
+    table td {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .jumbotron {
+        height: 820px;
+    }
+
+    .jumbotron h1 {
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        font-size: 12px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 27px;
+    }
+
+    aside figure h5 {
+        font-size: 11px;
+    }
+
+    table th {
+        font-size: 17px;
+    }
+    
+    table td {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .jumbotron {
+        height: 750px;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        padding: 13px 0;
+    }
+
+    nav ul li {
+        margin: 0 9px;
+        font-size: 10px;
+    }
+
+    .early-history h1, .era-colonial h1, .post-war h1 {
+        font-size: 22px;
+    }
+
+    .early-history p, .era-colonial p, .post-war p{
+        font-size: 10px;
+    }
+
+    .early-history h1:nth-child(2) , .post-war h1:nth-child(2) {
+        margin-top: -10px;
+    }
+
+    aside figure h5 {
+        font-size: 9px;
+    }
+
+    table th {
+        font-size: 15px;
+    }
+    
+    table td {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 300px ) {
+    .jumbotron {
+        height:500px;
+    }
+
+    .jumbotron h1 {
+        font-size: 30px;
+    }
+
+    .container { 
+        padding: 0 25px;
+    }
+}
