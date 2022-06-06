@@ -19,7 +19,6 @@ html {
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
-    background-attachment: fixed;
 }
 
 .jumbotron h1 {
